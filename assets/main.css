@@ -1,0 +1,73 @@
+@import './base.css';
+
+html,
+body,
+#__nuxt {
+  overflow: hidden;
+}
+
+#__nuxt {
+  min-height: 100vh;
+  position: static;
+  font-weight: normal;
+
+  display: grid;
+  grid-template-rows: 40px calc(100vh - 40px);
+  grid-template-columns: 250px auto;
+  grid-template-areas: 
+    "header header"
+    "nav main"
+  ;
+}
+
+#__nuxt > main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#__nuxt > main > h1 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.1em;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #925FF0;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: #925FF020;
+  }
+}
+
+@media (max-width: 650px) {
+  #__nuxt {  
+    display: block;
+  }
+
+  #__nuxt > main {
+    height: calc(100vh - 40px);
+  }
+}
+
+@media (max-width: 435px) {
+  #__nuxt > main {
+    padding: 10px;
+  }
+}
