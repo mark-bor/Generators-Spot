@@ -36,7 +36,7 @@
   top: 40px;
   left: 0;
 
-  background-color: #FFFFFF;
+  background-color: var(--color-background);
 }
 
 .list {
@@ -48,7 +48,7 @@
   gap: 5px;
 
   box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .link {

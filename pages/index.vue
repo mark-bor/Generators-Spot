@@ -3,7 +3,7 @@
 
 <template>
   <main class="home">
-    <h1 class="title">Welcome to Generators</h1>
+    <h1 class="title">Welcome to Generators Spot</h1>
 
     <p class="text">Here are some generators which can help you generate data that you need.</p>
   </main>
@@ -20,7 +20,7 @@
 }
 
 .title {
-  color: #925FF0;
+  color: var(--color-1);
   font-size: 45px;
   font-weight: 700;
 }

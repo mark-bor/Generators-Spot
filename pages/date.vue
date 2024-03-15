@@ -122,8 +122,9 @@
   width: 270px;
   padding: 20px;
 
-  background-color: #d9d9d9;
+  background-color: var(--color-managing);
   border-radius: 10px;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
@@ -159,7 +160,6 @@
   outline: none;
   
   text-align: center;
-  color: #925FF0;
   font-size: 15px;
   font-weight: 500;
   line-height: 2em;
@@ -169,7 +169,7 @@
   top: 0;
   right: 0;
 
-  color: #FF4524;
+  color: var(--color-error);
   font-size: 13px;
 }
 .quantity > input {
@@ -192,11 +192,10 @@
   cursor: pointer;
 }
 .button.reset {
-  border: 2px solid #925FF0;
+  border: 2px solid var(--color-1);
 }
 .button.generate {
-  background-color: #925FF0;
-  color: #FFFFFF;
+  background-color: var(--color-1);
 }
 
 .dates {
@@ -214,11 +213,11 @@
   align-items: center;
   column-gap: 7px;
 
-  background-color: #925FF0;
+  background-color: var(--color-1);
   border-radius: 5px;
   cursor: pointer;
 
-  color: #FFFFFF;
+  color: var(--color-background);
 }
 .dates-list {
   margin-left: 10px;

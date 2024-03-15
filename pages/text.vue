@@ -84,7 +84,7 @@
   max-width: 70%;
   padding: 8px 15px;
 
-  background-color: #d9d9d9;
+  background-color: var(--color-2);
   border-radius: 15px;
 }
 .you {
@@ -97,7 +97,7 @@
 }
 
 .message > h3 {
-  color: #925FF0;
+  color: var(--color-1);
   font-size: 16px;  
 }
 
@@ -118,8 +118,9 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: #d9d9d9;
+  background-color: var(--color-managing);
   border-radius: 20px;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 .typing-field {
@@ -143,11 +144,10 @@
   cursor: pointer;
 }
 .button.reset {
-  border: 2px solid #925FF0;
+  border: 2px solid var(--color-1);
 }
 .button.generate {
-  background-color: #925FF0;
-  color: #FFFFFF;
+  background-color: var(--color-1);
 }
 
 @media (max-width: 650px) {

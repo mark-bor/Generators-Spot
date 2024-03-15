@@ -132,8 +132,9 @@
   width: 270px;
   padding: 20px;
 
-  background-color: #d9d9d9;
+  background-color: var(--color-managing);
   border-radius: 10px;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 .setting-title {
@@ -158,11 +159,11 @@
   border-radius: 5px;
 }
 .checkbox:hover {
-  background-color: #925FF020;
+  background-color: var(--color-2);
 }
 .checkbox > input {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 
   cursor: inherit;
   -webkit-appearance: none;
@@ -170,12 +171,12 @@
   appearance: none;
   
   background-color: transparent;
-  border: 2px solid #54656f;
+  border: 1px solid #54656f;
   border-radius: 5px;
 }
 .checkbox > input:checked {
   border: 0;
-  background: #925FF0;
+  background: var(--color-1);
 }
 .checkbox > span {
   font-size: 16px;
@@ -208,7 +209,6 @@
   border-radius: 5px;
   outline: none;
   
-  color: #925FF0;
   font-size: 15px;
   font-weight: 500;
   line-height: 2em;
@@ -230,11 +230,10 @@
   cursor: pointer;
 }
 .button.reset {
-  border: 2px solid #925FF0;
+  border: 2px solid var(--color-1);
 }
 .button.generate {
-  background-color: #925FF0;
-  color: #FFFFFF;
+  background-color: var(--color-1);
 }
 
 .passwords {
@@ -252,11 +251,11 @@
   align-items: center;
   column-gap: 7px;
 
-  background-color: #925FF0;
+  background-color: var(--color-1);
   border-radius: 5px;
   cursor: pointer;
 
-  color: #FFFFFF;
+  color: var(--color-background);
 }
 .passwords-list {
   margin-left: 10px;

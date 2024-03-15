@@ -44,7 +44,7 @@ ul, ol, li {
 a,
 .green {
   text-decoration: none;
-  color: #925FF0;
+  color: var(--color-1);
   transition: 0.4s;
   padding: 3px;
 }
@@ -52,7 +52,7 @@ a,
 
 @media (hover: hover) {
   a:hover {
-    background-color: #925FF020;
+    background-color: var(--color-2);
   }
 }
 
