@@ -4,9 +4,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Generators",
-      // link: [
-      //   { rel: "icon", href: "/assets/logo.svg" }
-      // ]
+      link: [
+        { rel: "icon", href: "./logo.svg" }
+      ]
     }
   }
 })
