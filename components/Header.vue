@@ -4,11 +4,11 @@
 
 <template>
   <header class="header">
-    <a 
+    <NuxtLink 
       class="link"
-      href="https://kitsune-diary.vercel.app/"
-      name="kitsune diary"
-    >Kitsune Diary</a>
+      to="/"
+      name="home"
+    >Home</NuxtLink>
 
     <button 
       class="menu-button"
@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #FFFFFF;
+  background-color: var(--color-1);
   box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
 
   line-height: 1.5;
@@ -45,14 +45,12 @@
   border-radius: 5px;
   cursor: pointer;
 
-  color: #2C3E50;
+  color: var(--color-background);
   font-weight: 600;
   line-height: 1.1em;
 }
-
-.logo {
-  display: block;
-  margin: auto 0;
+.link:hover {
+  background: none;
 }
 
 .menu-button {
@@ -66,7 +64,7 @@
 
   .menu-button {
     display: block;
-    color: #925FF0;
+    color: var(--color-background);
   }
   .menu-button > span {
     font-size: 14px;
