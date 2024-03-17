@@ -39,10 +39,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 20px;
 }
 
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: var(--color-1);
   font-size: 45px;
   font-weight: 700;
@@ -50,7 +51,7 @@
 
 .text {
   width: 70%;
-  margin-bottom: 50px;
+  margin-bottom: 7px;
 
   text-align: center;
   font-size: 20px;
@@ -59,6 +60,7 @@
 .resourses-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
