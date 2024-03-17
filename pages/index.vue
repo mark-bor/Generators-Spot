@@ -32,7 +32,7 @@
 
 <style scoped>
 .home {
-  height: calc(100vh - 40px);
+  height: 100%;
   position: relative;
 
   display: flex;
