@@ -279,6 +279,7 @@
 @media (max-width: 830px) {
   .passwords-generator {
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
   }
  
@@ -290,6 +291,7 @@
 @media (max-width: 650px) {
   .passwords-generator {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
   }
  
@@ -301,6 +303,7 @@
 @media (max-width: 560px) {
   .passwords-generator {
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
   }
  
