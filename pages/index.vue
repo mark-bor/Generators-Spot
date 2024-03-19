@@ -15,7 +15,11 @@
         href="https://github.com/mark-bor/Generators-Spot"
         target="_blank"
       >
-        <IconGitHub class="icon" />
+        <img 
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
+          alt="generators spot"
+          width="20" height="20"
+        />
         <span>Generators Spot on GitHub</span>
       </a>
 
@@ -23,7 +27,11 @@
         class="resourses-link"
         href="https://kitsune-diary.vercel.app/"
       >
-        <IconKitsuneDiary class="icon" />
+        <img 
+          src="https://kitsune-diary.vercel.app/_next/static/media/logo.aadbc3bc.svg" 
+          alt="kitsune diary" 
+          height="20"
+        />
         <span>Kitsune Diary</span>
       </a>
     </div>
