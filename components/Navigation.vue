@@ -1,10 +1,16 @@
 <script setup lang="ts">
-  import { menu } from '../stores/menu'
+  import { menu } from '../stores/menu';
+  import IconWrench from './icons/IconWrench.vue';
 
-  const links: string[] = [
-    'passwords', 
-    'date',
-    'text'
+  type LinkData = {
+    link: string
+    uncompleted: boolean
+  }
+
+  const links: LinkData[] = [
+    {link: 'passwords', uncompleted: false}, 
+    {link: 'date', uncompleted: false},
+    {link: 'text', uncompleted: true},
   ];
 
   const upperFirstLetter = (word: string) => {
@@ -18,9 +24,13 @@
       <li v-for="l of links">
         <NuxtLink 
           class="link" 
-          :to="`/${l}`"
+          :to="`/${l.link}`"
           @click="menu.setMenu(false)"
-        >{{ upperFirstLetter(l) }}</NuxtLink>
+        >{{ upperFirstLetter(l.link) }}</NuxtLink>
+        <span v-if="l.uncompleted" class="icon-with-explanation">
+          <IconWrench />
+          <span class="explanation">This section is in development ptocess.</span>
+        </span>
       </li>
     </ul>
   </nav>
@@ -51,6 +61,13 @@
   border-radius: 15px;
 }
 
+.list > li {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+
 .link {
   display: inline-block;
   width: 100%;
@@ -61,6 +78,35 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.3em;
+}
+
+.icon-with-explanation {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  overflow: hidden;
+}
+.icon-with-explanation:hover {
+  overflow: visible;
+  background-color: var(--color-2);
+}
+
+.explanation {
+  width: 170px;
+  padding: 5px 10px;
+  position: absolute;
+  left: 25px;
+
+  background-color: var(--color-background);
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
 }
 
 @media (max-width: 650px) {
@@ -76,6 +122,15 @@
     top: 40px;
     left: 0;
     z-index: 5;
+  }
+
+  .link {
+    font-size: 22px;
+  }
+
+  .explanation {
+    right: 25px;
+    left: auto;
   }
 }
 </style>

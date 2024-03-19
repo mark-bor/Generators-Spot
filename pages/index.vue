@@ -1,6 +1,4 @@
 <script setup>
-  import IconKitsuneDiary from "../components/icons/IconKitsuneDiary.vue";
-  import IconGitHub from "../components/icons/IconGitHub.vue";
 </script>
 
 <template>
