@@ -81,9 +81,9 @@
 }
 
 .icon-with-explanation {
-  min-width: 20px;
-  width: 20px;
-  height: 20px;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
   position: relative;
   
   display: flex;
@@ -99,14 +99,16 @@
 }
 
 .explanation {
-  width: 170px;
+  width: 190px;
   padding: 5px 10px;
   position: absolute;
   left: 25px;
 
   background-color: var(--color-background);
-  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
   border-radius: 7px;
+}
+.icon-with-explanation:hover > .explanation {
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 650px) {
