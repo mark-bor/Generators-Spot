@@ -2,12 +2,13 @@
 
 html,
 body,
-#__nuxt {
+#__nuxt,
+.root-component {
   height: 100%;
   overflow: hidden;
 }
 
-#__nuxt {
+.root-component {
   position: static;
   font-weight: normal;
 
@@ -20,12 +21,12 @@ body,
   ;
 }
 
-#__nuxt > main {
+.root-component > main {
   padding: 20px;
   overflow: auto;
 }
 
-#__nuxt > main > h1 {
+.root-component > main > h1 {
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -57,17 +58,17 @@ a,
 }
 
 @media (max-width: 650px) {
-  #__nuxt {  
+  .root-component {  
     display: block;
   }
 
-  #__nuxt > main {
+  .root-component > main {
     height: calc(100% - 40px);
   }
 }
 
 @media (max-width: 435px) {
-  #__nuxt > main {
+  .root-component > main {
     padding: 20px;
   }
 }

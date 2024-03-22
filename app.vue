@@ -4,9 +4,11 @@
 </script>
 
 <template>
-  <Header />
-  <Navigation />
-  <NuxtPage />
+  <div class="root-component">
+    <Header />
+    <Navigation />
+    <NuxtPage />
+  </div>
 </template>
 
 <style>

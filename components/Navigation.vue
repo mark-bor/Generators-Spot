@@ -11,6 +11,7 @@
     {link: 'passwords', uncompleted: false}, 
     {link: 'date', uncompleted: false},
     {link: 'text', uncompleted: true},
+    {link: 'qr-code', uncompleted: true},
   ];
 
   const upperFirstLetter = (word: string) => {
