@@ -7,6 +7,8 @@
     <h1 class="title" >QR Code Generator</h1>
 
     <div class="setting">
+      <h3 class="providers-title">Providers *:</h3>
+
       <ul class="providers">
         <li v-for="p of qrCode.providers">
           <label class="provider" :for="p">
@@ -24,7 +26,7 @@
       </ul>
 
       <label class="text-input " for="data">
-        <span>Data to convert</span>
+        <span>Data to convert *</span>
         <input
           id="data"
           type="text"
@@ -39,7 +41,7 @@
         class="select"
         for="format"
       >
-        <span>Format</span>
+        <span>Format (optional)</span>
         <select 
           id="format" 
           name="format"
@@ -58,7 +60,7 @@
         class="select"
         for="type"
       >
-        <span>Type</span>
+        <span>Type (optional)</span>
         <select 
           id="type" 
           name="type"
@@ -79,6 +81,7 @@
         >Reset</button>
         <button 
           class="button generate"
+          :disabled="!qrCode.provider || !qrCode.data"
           @click="qrCode.generate"
         >Generate</button>
       </div>
@@ -129,8 +132,14 @@
   box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
+.providers-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
 .providers {
   margin-bottom: 15px;
+  padding-left: 5px;
 }
 .provider {
   height: 28px;

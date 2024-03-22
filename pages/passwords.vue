@@ -171,11 +171,10 @@
   appearance: none;
   
   background-color: transparent;
-  border: 1px solid #54656f;
+  border: 1px solid var(--color-text);
   border-radius: 5px;
 }
 .checkbox > input:checked {
-  border: 0;
   background: var(--color-1);
 }
 .checkbox > span {

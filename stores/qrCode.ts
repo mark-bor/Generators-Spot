@@ -23,7 +23,7 @@ function getlocalData(): QRCodeLocalData {
   // localData ? JSON.parse(localData) : 
   return {
     provider: undefined,
-    data: 'https://kitsune-diary.vercel.app/',
+    data: '',
     format: 'png',
     type: 'url',
     logo: '',

@@ -3,20 +3,17 @@
   import IconWrench from './icons/IconWrench.vue';
 
   type LinkData = {
+    name: string
     link: string
     uncompleted: boolean
   }
 
   const links: LinkData[] = [
-    {link: 'passwords', uncompleted: false}, 
-    {link: 'date', uncompleted: false},
-    {link: 'text', uncompleted: true},
-    {link: 'qr-code', uncompleted: true},
+    {name: 'Passwords', link: 'passwords', uncompleted: false}, 
+    {name: 'Date', link: 'date', uncompleted: false},
+    {name: 'Text', link: 'text', uncompleted: true},
+    {name: 'QR-code', link: 'qr-code', uncompleted: true},
   ];
-
-  const upperFirstLetter = (word: string) => {
-    return word.charAt(0).toUpperCase() + word.slice(1)
-  }
 </script>
 
 <template>
@@ -27,10 +24,10 @@
           class="link" 
           :to="`/${l.link}`"
           @click="menu.setMenu(false)"
-        >{{ upperFirstLetter(l.link) }}</NuxtLink>
+        >{{ l.name }}</NuxtLink>
         <span v-if="l.uncompleted" class="icon-with-explanation">
           <IconWrench />
-          <span class="explanation">This section is in development ptocess.</span>
+          <span class="explanation">This page is in development ptocess.</span>
         </span>
       </li>
     </ul>
